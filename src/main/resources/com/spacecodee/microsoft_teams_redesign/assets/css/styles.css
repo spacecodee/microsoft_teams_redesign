@@ -1,10 +1,146 @@
 * {
-    --fx-text-color1: #5c5c5c;
-    --fx-text-color2: #9f9f9f;
-    --fx-text-color3: #c4c4c4;
-    --fx-background-color-1: #ededed;
-    --fx-background-and-text: #fffffe;
-    --fx-primary-color1: #5059c9;
-    --fx-primary-color2: #7b83eb;
-    --fx-primary-color3: #a09ef9;
+    -fx-text-color1: #5c5c5c;
+    -fx-text-color2: #9f9f9f;
+    -fx-text-color3: #c4c4c4;
+    -fx-background-color-1: #ededed;
+    -fx-background-color-1-transparent: rgba(237, 237, 237, 0.5);
+    -fx-background-and-text: #fffffe;
+    -fx-primary-color1: #5059c9;
+    -fx-primary-color2: #7b83eb;
+    -fx-primary-color3: #a09ef9;
+    -fx-primary-color3-transparent: rgba(160, 158, 249, 0.5);
+}
+
+/*spaces*/
+.space-10 {
+    -fx-spacing: 10;
+}
+
+.space-20 {
+    -fx-spacing: 20;
+}
+
+.space-30 {
+    -fx-spacing: 30;
+}
+
+/*paddings*/
+.padding-all-10 {
+    -fx-padding: 10;
+}
+
+/*container*/
+.container {
+    -fx-background-color: linear-gradient(to top right, -fx-background-and-text, -fx-primary-color3-transparent);
+}
+
+.text-search-container {
+    -fx-padding: 2 15;
+    -fx-background-color: -fx-background-and-text;
+    -fx-background-radius: 10;
+}
+
+.user-profile-container {
+    -fx-padding: 4;
+    -fx-background-color: -fx-background-and-text;
+    -fx-background-radius: 100;
+}
+
+.side-bar-container {
+    -fx-padding: 20 5;
+    -fx-background-color: linear-gradient(to bottom right, -fx-primary-color2, -fx-primary-color1);
+    -fx-background-radius: 0 20 20 20;
+}
+
+.center-container {
+    -fx-padding: 10 20;
+}
+
+.your-teams-container {
+    -fx-padding: 10 15;
+}
+
+.image-view-container {
+    -fx-padding: 15;
+    -fx-background-color: -fx-primary-color3-transparent;
+    -fx-background-radius: 100;
+}
+
+/*buttons*/
+.button,
+.side-bar-button {
+    -fx-border-width: 0;
+    -fx-padding: 10;
+    -fx-background-color: none;
+}
+
+.side-bar-button:hover {
+    -fx-background-color: -fx-background-color-1-transparent;
+    -fx-background-radius: 10;
+}
+
+.button-meeting {
+    -fx-text-fill: -fx-background-and-text;
+    -fx-font-size: 14;
+    -fx-padding: 5 30;
+    -fx-background-color: -fx-primary-color1;
+    -fx-background-radius: 5;
+}
+
+.button-meeting:hover {
+    -fx-background-color: -fx-primary-color2;
+}
+
+/*text*/
+.label {
+    -fx-font-size: 18;
+    -fx-text-fill: -fx-text-color1;
+}
+
+.text-field {
+    -fx-background-color: none;
+    -fx-text-fill: -fx-text-color1;
+    -fx-prompt-text-fill: -fx-text-color2;
+}
+
+.welcome-text {
+    -fx-font-size: 24;
+    -fx-text-fill: -fx-primary-color1;
+}
+
+.h1 {
+    -fx-font-size: 18;
+}
+
+.h2,
+.card-meeting-text-small {
+    -fx-font-size: 16;
+}
+
+.h3 {
+    -fx-font-size: 14;
+}
+
+.h4 {
+    -fx-font-size: 10;
+}
+
+.card-meeting-text-small {
+    -fx-text-fill: -fx-background-color-1;
+}
+
+/*cards*/
+.card-meeting {
+    -fx-background-color: -fx-background-and-text;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+}
+
+/*effects*/
+.rotate-180 {
+    -fx-rotate: -180;
+}
+
+.text-search-container .image-view {
+    -fx-translate-y: 1;
 }

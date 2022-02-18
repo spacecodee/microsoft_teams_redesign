@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: "avenir regular";
-    font-style: regular;
+    font-style: normal;
     font-weight: 400;
     src: url("../fonts/avenir-next-cyr/AvenirNextCyr-Regular.ttf");
 }
@@ -24,7 +24,7 @@
     -fx-font-weight: 400;
 }
 
-.font-normal {
+.font-demi {
     -fx-font-family: "avenir demi";
     -fx-font-weight: 600;
 }
