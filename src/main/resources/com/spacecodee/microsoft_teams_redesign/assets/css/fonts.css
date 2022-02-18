@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "avenir bold";
+    font-style: bold;
+    font-weight: 900;
+    src: url("../fonts/avenir-next-cyr/AvenirNextCyr-Bold.ttf");
+}
+
+@font-face {
+    font-family: "avenir demi";
+    font-style: demi;
+    font-weight: 600;
+    src: url("../fonts/avenir-next-cyr/AvenirNextCyr-Demi.ttf");
+}
+
+@font-face {
+    font-family: "avenir regular";
+    font-style: regular;
+    font-weight: 400;
+    src: url("../fonts/avenir-next-cyr/AvenirNextCyr-Regular.ttf");
+}
+
+.font-normal {
+    -fx-font-family: "avenir regular";
+    -fx-font-weight: 400;
+}
+
+.font-normal {
+    -fx-font-family: "avenir demi";
+    -fx-font-weight: 600;
+}
+
+.font-bold {
+    -fx-font-family: "avenir bold";
+    -fx-font-weight: 900;
+}
