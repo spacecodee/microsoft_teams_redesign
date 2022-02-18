@@ -2,10 +2,15 @@
 
 Redesign of Microsoft Teams to improve user experience and reduce code complexity, using at Framework JavaFx.
 
-How to use?
+How to use? //English
+- Cloning the repository: https://github.com/spacecodee/microsoft_teams_redesign/tree/project-init
+- Assets already included in the project.
+- create new branch or using this.
 
-
-- By Spacecodee
+¿Cómo usar? //Español
+- Clonar el repositorio: https://github.com/spacecodee/microsoft_teams_redesign/tree/project-init
+- Los assets ya estan incluidos en el proyecto.
+- Crear una nueva rama o usar esta.
 
 ## Follow me
 - [Instagram](https://www.instagram.com/spacecodee/)
