@@ -9,6 +9,7 @@
     -fx-primary-color2: #7b83eb;
     -fx-primary-color3: #a09ef9;
     -fx-primary-color3-transparent: rgba(160, 158, 249, 0.5);
+    -fx-primary-color4-transparent: rgba(160, 158, 249, 0.25);
 }
 
 /*spaces*/
@@ -27,6 +28,10 @@
 /*paddings*/
 .padding-all-10 {
     -fx-padding: 10;
+}
+
+.padding-all-5 {
+    -fx-padding: 5;
 }
 
 /*container*/
@@ -66,6 +71,18 @@
     -fx-background-radius: 100;
 }
 
+.calendar-container {
+    -fx-padding: 10 20;
+    -fx-background-color: -fx-background-and-text;
+    -fx-background-radius: 20;
+}
+
+.calendar-container-bar {
+    -fx-padding: 2;
+    -fx-background-color: -fx-primary-color4-transparent;
+    -fx-background-radius: 10;
+}
+
 /*buttons*/
 .button,
 .side-bar-button {
@@ -89,6 +106,12 @@
 
 .button-meeting:hover {
     -fx-background-color: -fx-primary-color2;
+}
+
+.button-calendar {
+    -fx-padding: 5;
+    -fx-background-color: -fx-primary-color2;
+    -fx-background-radius: 10;
 }
 
 /*text*/
@@ -127,6 +150,23 @@
 
 .card-meeting-text-small {
     -fx-text-fill: -fx-background-color-1;
+}
+
+.calendar-title {
+    -fx-font-size: 24;
+    -fx-text-fill: -fx-text-color3;
+}
+
+.calendar-current-day {
+    -fx-text-fill: -fx-primary-color2;
+}
+
+.calendar-important-day {
+    -fx-text-fill: -fx-primary-color3;
+}
+
+.calendar-dot {
+    -fx-font-size: 24;
 }
 
 /*cards*/

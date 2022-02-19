@@ -3,7 +3,6 @@ package com.spacecodee.microsoft_teams_redesign.controller.dashboard;
 import com.spacecodee.microsoft_teams_redesign.utils.Images;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
 import java.net.URL;
