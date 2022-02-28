@@ -14,996 +14,1214 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.microsoft_teams_redesign.controller.dashboard.DashboardController">
+<BorderPane fx:id="appContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.spacecodee.microsoft_teams_redesign.controller.dashboard.DashboardController">
     <top>
-        <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
-            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="rotate-180" HBox.hgrow="ALWAYS">
+        <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+              minWidth="-Infinity" BorderPane.alignment="CENTER">
+            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                      HBox.hgrow="ALWAYS">
+                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                               styleClass="rotate-180" HBox.hgrow="ALWAYS">
                         <cursor>
-                            <Cursor fx:constant="HAND" />
+                            <Cursor fx:constant="HAND"/>
                         </cursor>
-                        <Image url="@../../assets/icons/arrow_left_withe.png" />
+                        <Image url="@../../assets/icons/arrow_left_withe.png"/>
                     </ImageView>
                 </HBox>
-                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="text-search-container" HBox.hgrow="ALWAYS">
-                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" HBox.hgrow="ALWAYS">
-                        <Image url="@../../assets/icons/search.png" />
+                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                      styleClass="text-search-container" HBox.hgrow="ALWAYS">
+                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0"
+                               HBox.hgrow="ALWAYS">
+                        <Image url="@../../assets/icons/search.png"/>
                     </ImageView>
-                    <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Buscar" styleClass="font-normal" HBox.hgrow="ALWAYS" />
+                    <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                               minHeight="-Infinity" minWidth="-Infinity" promptText="Buscar" styleClass="font-normal"
+                               HBox.hgrow="ALWAYS"/>
                 </HBox>
             </HBox>
-            <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+            <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10"
+                  HBox.hgrow="ALWAYS">
+                <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                      HBox.hgrow="ALWAYS">
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                     <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
-                        <Image url="@../../assets/icons/chat.png" />
+                        <Image url="@../../assets/icons/chat.png"/>
                     </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0" y="5.0">
-                        <Image url="@../../assets/icons/dot_rose.png" />
+                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0"
+                               y="5.0">
+                        <Image url="@../../assets/icons/dot_rose.png"/>
                     </ImageView>
                 </Pane>
-                <Pane layoutX="161.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                <Pane layoutX="161.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                     <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
-                        <Image url="@../../assets/icons/notifications.png" />
+                        <Image url="@../../assets/icons/notifications.png"/>
                     </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0" y="5.0">
-                        <Image url="@../../assets/icons/dot_rose.png" />
+                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0"
+                               y="5.0">
+                        <Image url="@../../assets/icons/dot_rose.png"/>
                     </ImageView>
                 </Pane>
-                <Pane layoutX="182.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="user-profile-container" HBox.hgrow="ALWAYS">
+                <Pane layoutX="182.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" styleClass="user-profile-container"
+                      HBox.hgrow="ALWAYS">
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
-                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
-                        <Image url="@../../assets/img/user_profile.png" />
+                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" x="5.0"
+                               y="5.0">
+                        <Image url="@../../assets/img/user_profile.png"/>
                     </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="28.0" y="28.0">
-                        <Image url="@../../assets/icons/dot_green.png" />
+                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="28.0"
+                               y="28.0">
+                        <Image url="@../../assets/icons/dot_green.png"/>
                     </ImageView>
                 </Pane>
             </HBox>
         </HBox>
     </top>
     <styleClass>
-        <String fx:value="padding-all-10" />
-        <String fx:value="container" />
+        <String fx:value="padding-all-10"/>
+        <String fx:value="container"/>
     </styleClass>
     <stylesheets>
-        <URL value="@../../assets/css/styles.css" />
-        <URL value="@../../assets/css/fonts.css" />
+        <URL value="@../../assets/css/styles.css"/>
+        <URL value="@../../assets/css/fonts.css"/>
     </stylesheets>
     <left>
-        <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              BorderPane.alignment="CENTER">
             <styleClass>
-                <String fx:value="side-bar-container" />
-                <String fx:value="space-30" />
+                <String fx:value="side-bar-container"/>
+                <String fx:value="space-30"/>
             </styleClass>
-            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                  minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
+                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/dashboard.png" />
+                            <Image url="@../../assets/icons/dashboard.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/people.png" />
+                            <Image url="@../../assets/icons/people.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/calendar.png" />
+                            <Image url="@../../assets/icons/calendar.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/mail.png" />
+                            <Image url="@../../assets/icons/mail.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/note.png" />
+                            <Image url="@../../assets/icons/note.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/more.png" />
+                            <Image url="@../../assets/icons/more.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
             </VBox>
-            <VBox alignment="BOTTOM_CENTER" layoutX="20.0" layoutY="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+            <VBox alignment="BOTTOM_CENTER" layoutX="20.0" layoutY="20.0" maxHeight="1.7976931348623157E308"
+                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10"
+                  VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/todo_list.png" />
+                            <Image url="@../../assets/icons/todo_list.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
-                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
+                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
                     <graphic>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/help.png" />
+                            <Image url="@../../assets/icons/help.png"/>
                         </ImageView>
                     </graphic>
                     <cursor>
-                        <Cursor fx:constant="HAND" />
+                        <Cursor fx:constant="HAND"/>
                     </cursor>
                 </Button>
             </VBox>
         </VBox>
     </left>
     <right>
-        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER"/>
     </right>
     <center>
-        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="center-container" BorderPane.alignment="CENTER">
+        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                    minWidth="-Infinity" styleClass="center-container" BorderPane.alignment="CENTER">
             <top>
-                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="TOP_LEFT">
-                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="¡Hola, Lara!" HBox.hgrow="ALWAYS">
+                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                      BorderPane.alignment="TOP_LEFT">
+                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                           minWidth="-Infinity" text="¡Hola, Lara!" HBox.hgrow="ALWAYS">
                         <styleClass>
-                            <String fx:value="font-bold" />
-                            <String fx:value="welcome-text" />
+                            <String fx:value="font-bold"/>
+                            <String fx:value="welcome-text"/>
                         </styleClass>
                     </Label>
                 </HBox>
             </top>
             <center>
-                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" BorderPane.alignment="CENTER">
-                    <children>
-                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
-                            <styleClass>
-                                <String fx:value="space-20" />
-                                <String fx:value="your-teams-container" />
-                            </styleClass>
-                            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                <Label text="Tus Equipos">
-                                    <styleClass>
-                                        <String fx:value="font-bold" />
-                                        <String fx:value="h2" />
-                                    </styleClass>
-                                </Label>
-                            </HBox>
-                            <HBox layoutX="25.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                      minWidth="-Infinity" styleClass="space-10" BorderPane.alignment="CENTER">
+                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                          minWidth="-Infinity">
+                        <styleClass>
+                            <String fx:value="space-20"/>
+                            <String fx:value="your-teams-container"/>
+                        </styleClass>
+                        <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                              minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                            <Label text="Tus Equipos">
                                 <styleClass>
-                                    <String fx:value="card-meeting" />
-                                    <String fx:value="space-20" />
+                                    <String fx:value="font-bold"/>
+                                    <String fx:value="h2"/>
                                 </styleClass>
-                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="image-view-container" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <Image url="@../../assets/icons/3d/marketing.png" />
+                            </Label>
+                        </HBox>
+                        <HBox layoutX="25.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="card-meeting"/>
+                                <String fx:value="space-20"/>
+                            </styleClass>
+                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  styleClass="image-view-container" HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <Image url="@../../assets/icons/3d/marketing.png"/>
+                                </ImageView>
+                            </HBox>
+                            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Marketing Digital (MD)">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h1"/>
+                                        </styleClass>
+                                    </Label>
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="EN VIVO AHORA">
+                                        <graphic>
+                                            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@../../assets/icons/dot_rose.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                        <styleClass>
+                                            <String fx:value="h4"/>
+                                            <String fx:value="font-normal"/>
+                                        </styleClass>
+                                    </Label>
+                                </VBox>
+                                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308"
+                                      maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                      VBox.vgrow="ALWAYS">
+                                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                            minWidth="-Infinity" mnemonicParsing="false" text="Unirme"
+                                            HBox.hgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="button-meeting"/>
+                                            <String fx:value="font-bold"/>
+                                        </styleClass>
+                                        <cursor>
+                                            <Cursor fx:constant="HAND"/>
+                                        </cursor>
+                                    </Button>
+                                </HBox>
+                            </VBox>
+                            <VBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+                                  minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                                      maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                      VBox.vgrow="ALWAYS">
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                               HBox.hgrow="ALWAYS">
+                                        <cursor>
+                                            <Cursor fx:constant="HAND"/>
+                                        </cursor>
+                                        <Image url="@../../assets/icons/more_lead.png"/>
                                     </ImageView>
                                 </HBox>
-                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Marketing Digital (MD)">
-                                            <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h1" />
-                                            </styleClass>
-                                        </Label>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="EN VIVO AHORA">
-                                            <graphic>
-                                                <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
-                                                    <Image url="@../../assets/icons/dot_rose.png" />
-                                                </ImageView>
-                                            </graphic>
-                                            <styleClass>
-                                                <String fx:value="h4" />
-                                                <String fx:value="font-normal" />
-                                            </styleClass>
-                                        </Label>
-                                    </VBox>
-                                    <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Unirme" HBox.hgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="button-meeting" />
-                                                <String fx:value="font-bold" />
-                                            </styleClass>
-                                            <cursor>
-                                                <Cursor fx:constant="HAND" />
-                                            </cursor>
-                                        </Button>
-                                    </HBox>
-                                </VBox>
-                                <VBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                    <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                            <cursor>
-                                                <Cursor fx:constant="HAND" />
-                                            </cursor>
-                                            <Image url="@../../assets/icons/more_lead.png" />
+                                <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0"
+                                      maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                          minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                        <ImageView fx:id="imgUser1" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true"
+                                                   preserveRatio="true" translateY="6.0" HBox.hgrow="ALWAYS">
+                                            <Image url="@../../assets/img/man3.png"/>
+                                        </ImageView>
+                                        <ImageView fx:id="imgUser2" fitHeight="32.0" fitWidth="32.0" layoutX="10.0"
+                                                   layoutY="10.0" pickOnBounds="true" preserveRatio="true"
+                                                   translateY="6.0" HBox.hgrow="ALWAYS">
+                                            <Image url="@../../assets/img/man2.png"/>
+                                        </ImageView>
+                                        <ImageView fx:id="imgUser3" fitHeight="32.0" fitWidth="32.0" layoutX="42.0"
+                                                   layoutY="10.0" pickOnBounds="true" preserveRatio="true"
+                                                   translateY="6.0" HBox.hgrow="ALWAYS">
+                                            <Image url="@../../assets/img/man1.png"/>
                                         </ImageView>
                                     </HBox>
-                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                            <ImageView fx:id="imgUser1" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateY="6.0" HBox.hgrow="ALWAYS">
-                                                <Image url="@../../assets/img/man3.png" />
-                                            </ImageView>
-                                            <ImageView fx:id="imgUser2" fitHeight="32.0" fitWidth="32.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateY="6.0" HBox.hgrow="ALWAYS">
-                                                <Image url="@../../assets/img/man2.png" />
-                                            </ImageView>
-                                            <ImageView fx:id="imgUser3" fitHeight="32.0" fitWidth="32.0" layoutX="42.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" translateY="6.0" HBox.hgrow="ALWAYS">
-                                                <Image url="@../../assets/img/man1.png" />
-                                            </ImageView>
-                                        </HBox>
-                                        <Label maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="card-meeting-text-small" text="+23" HBox.hgrow="ALWAYS" />
+                                    <Label maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity"
+                                           minWidth="-Infinity" styleClass="card-meeting-text-small" text="+23"
+                                           HBox.hgrow="ALWAYS"/>
+                                </HBox>
+                            </VBox>
+                        </HBox>
+                        <HBox layoutX="25.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="card-meeting"/>
+                                <String fx:value="space-20"/>
+                            </styleClass>
+                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  styleClass="image-view-container" HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <Image url="@../../assets/icons/3d/etica.png"/>
+                                </ImageView>
+                            </HBox>
+                            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Ética Profesional (EP)" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h1"/>
+                                        </styleClass>
+                                    </Label>
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Prof. Andrés Tarantino" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="h4"/>
+                                            <String fx:value="font-normal"/>
+                                        </styleClass>
+                                    </Label>
+                                </VBox>
+                            </VBox>
+                            <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                    <Image url="@../../assets/icons/more_lead.png"/>
+                                </ImageView>
+                            </HBox>
+                        </HBox>
+                        <HBox layoutX="25.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="card-meeting"/>
+                                <String fx:value="space-20"/>
+                            </styleClass>
+                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  styleClass="image-view-container" HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <Image url="@../../assets/icons/3d/direccion_estrategica.png"/>
+                                </ImageView>
+                            </HBox>
+                            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Dirección Estratégica (DE)" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h1"/>
+                                        </styleClass>
+                                    </Label>
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Prof. Analia Anderson" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="h4"/>
+                                            <String fx:value="font-normal"/>
+                                        </styleClass>
+                                    </Label>
+                                </VBox>
+                            </VBox>
+                            <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                    <Image url="@../../assets/icons/more_lead.png"/>
+                                </ImageView>
+                            </HBox>
+                        </HBox>
+                        <HBox layoutX="25.0" layoutY="373.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="card-meeting"/>
+                                <String fx:value="space-20"/>
+                            </styleClass>
+                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  styleClass="image-view-container" HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <Image url="@../../assets/icons/3d/flower.png"/>
+                                </ImageView>
+                            </HBox>
+                            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Dirección de Arte (DdA)" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h1"/>
+                                        </styleClass>
+                                    </Label>
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Prof. Pedro Shyamalan" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="h4"/>
+                                            <String fx:value="font-normal"/>
+                                        </styleClass>
+                                    </Label>
+                                </VBox>
+                            </VBox>
+                            <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                    <Image url="@../../assets/icons/more_lead.png"/>
+                                </ImageView>
+                            </HBox>
+                        </HBox>
+                        <HBox layoutX="25.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                              minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
+                            <styleClass>
+                                <String fx:value="card-meeting"/>
+                                <String fx:value="space-20"/>
+                            </styleClass>
+                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  styleClass="image-view-container" HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <Image url="@../../assets/icons/3d/gestion_proyectos.png"/>
+                                </ImageView>
+                            </HBox>
+                            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  styleClass="space-10" HBox.hgrow="ALWAYS">
+                                <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Gestión de Proyectos (GdP)" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h1"/>
+                                        </styleClass>
+                                    </Label>
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Prof. Gimena Zemeckis" VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="h4"/>
+                                            <String fx:value="font-normal"/>
+                                        </styleClass>
+                                    </Label>
+                                </VBox>
+                            </VBox>
+                            <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  HBox.hgrow="ALWAYS">
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                           HBox.hgrow="ALWAYS">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                    <Image url="@../../assets/icons/more_lead.png"/>
+                                </ImageView>
+                            </HBox>
+                        </HBox>
+                    </VBox>
+                    <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+                        <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
+                            <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                   minWidth="-Infinity" styleClass="font-bold" text="Calendario" VBox.vgrow="ALWAYS"/>
+                            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                  minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                <styleClass>
+                                    <String fx:value="calendar-container"/>
+                                    <String fx:value="space-10"/>
+                                    <String fx:value="card-shadow"/>
+                                </styleClass>
+                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                      minWidth="-Infinity" styleClass="space-20" VBox.vgrow="ALWAYS">
+                                    <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                           minWidth="-Infinity" text="Marzo 2021" HBox.hgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="calendar-title"/>
+                                        </styleClass>
+                                    </Label>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                          minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+                                        <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity"
+                                                maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                                mnemonicParsing="false" styleClass="button-calendar"
+                                                HBox.hgrow="ALWAYS">
+                                            <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <Image url="@../../assets/icons/arrow_left.png"/>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0"
+                                                maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                                minWidth="-Infinity" mnemonicParsing="false"
+                                                styleClass="button-calendar">
+                                            <graphic>
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                                           preserveRatio="true">
+                                                    <Image url="@../../assets/icons/arrow_right.png"/>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </HBox>
+                                </HBox>
+                                <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                                      minHeight="-Infinity" minWidth="-Infinity" styleClass="padding-all-5"
+                                      VBox.vgrow="ALWAYS">
+                                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                                          minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10"
+                                          VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Lun"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Mar" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Mie" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Jue" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Vie" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Sab" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="Dom" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="15.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          styleClass="space-10" VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="1"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="2" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="3" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="4" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="5" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="6" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="7" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="42.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          styleClass="space-10" VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="8"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="9" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="10" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="11" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="12" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="13" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="14" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="65.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          VBox.vgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="space-10"/>
+                                            <String fx:value="calendar-container-bar"/>
+                                        </styleClass>
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="15"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="16" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="17" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="18" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="19" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="20" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="21" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="65.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          styleClass="space-10" VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="22"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="23" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="24" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-current-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="25" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="26" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="27" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="28" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="119.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          styleClass="space-10" VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="29"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="30" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="31" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="1" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="2" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="3" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity"
+                                               maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                                               prefWidth="40.0" text="4" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="h2"/>
+                                                <String fx:value="font-normal"/>
+                                            </styleClass>
+                                        </Label>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="15.0" layoutY="144.0" maxHeight="-Infinity"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          prefHeight="20.0" styleClass="space-10" VBox.vgrow="ALWAYS">
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                               minWidth="-Infinity" prefWidth="40.0" translateY="-15.0"
+                                               HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="."
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0"
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="71.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0"
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="101.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0"
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="128.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0"
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0"
+                                               layoutX="153.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                               minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0"
+                                               translateY="-15.0" HBox.hgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="calendar-dot"/>
+                                                <String fx:value="font-bold"/>
+                                                <String fx:value="calendar-important-day"/>
+                                            </styleClass>
+                                        </Label>
                                     </HBox>
                                 </VBox>
-                            </HBox>
-                            <HBox layoutX="25.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
-                                <styleClass>
-                                    <String fx:value="card-meeting" />
-                                    <String fx:value="space-20" />
-                                </styleClass>
-                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="image-view-container" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <Image url="@../../assets/icons/3d/etica.png" />
+                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                      minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                    <Label contentDisplay="RIGHT" graphicTextGap="0.0"
+                                           maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                           minHeight="-Infinity" minWidth="-Infinity" text="Mes" HBox.hgrow="ALWAYS">
+                                        <graphic>
+                                            <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@../../assets/icons/play.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h3"/>
+                                            <String fx:value="calendar-important-day"/>
+                                        </styleClass>
+                                    </Label>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true"
+                                               HBox.hgrow="ALWAYS">
+                                        <Image url="@../../assets/icons/more_lead.png"/>
                                     </ImageView>
                                 </HBox>
-                                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Ética Profesional (EP)" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h1" />
-                                            </styleClass>
-                                        </Label>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Prof. Andrés Tarantino" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="h4" />
-                                                <String fx:value="font-normal" />
-                                            </styleClass>
-                                        </Label>
-                                    </VBox>
-                                </VBox>
-                                <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
-                                        <Image url="@../../assets/icons/more_lead.png" />
-                                    </ImageView>
-                                </HBox>
-                            </HBox>
-                            <HBox layoutX="25.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
-                                <styleClass>
-                                    <String fx:value="card-meeting" />
-                                    <String fx:value="space-20" />
-                                </styleClass>
-                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="image-view-container" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <Image url="@../../assets/icons/3d/direccion_estrategica.png" />
-                                    </ImageView>
-                                </HBox>
-                                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Dirección Estratégica (DE)" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h1" />
-                                            </styleClass>
-                                        </Label>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Prof. Analia Anderson" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="h4" />
-                                                <String fx:value="font-normal" />
-                                            </styleClass>
-                                        </Label>
-                                    </VBox>
-                                </VBox>
-                                <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
-                                        <Image url="@../../assets/icons/more_lead.png" />
-                                    </ImageView>
-                                </HBox>
-                            </HBox>
-                            <HBox layoutX="25.0" layoutY="373.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
-                                <styleClass>
-                                    <String fx:value="card-meeting" />
-                                    <String fx:value="space-20" />
-                                </styleClass>
-                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="image-view-container" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <Image url="@../../assets/icons/3d/flower.png" />
-                                    </ImageView>
-                                </HBox>
-                                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Dirección de Arte (DdA)" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h1" />
-                                            </styleClass>
-                                        </Label>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Prof. Pedro Shyamalan" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="h4" />
-                                                <String fx:value="font-normal" />
-                                            </styleClass>
-                                        </Label>
-                                    </VBox>
-                                </VBox>
-                                <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
-                                        <Image url="@../../assets/icons/more_lead.png" />
-                                    </ImageView>
-                                </HBox>
-                            </HBox>
-                            <HBox layoutX="25.0" layoutY="487.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="500.0" VBox.vgrow="ALWAYS">
-                                <styleClass>
-                                    <String fx:value="card-meeting" />
-                                    <String fx:value="space-20" />
-                                </styleClass>
-                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" styleClass="image-view-container" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <Image url="@../../assets/icons/3d/gestion_proyectos.png" />
-                                    </ImageView>
-                                </HBox>
-                                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                    <VBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Gestión de Proyectos (GdP)" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h1" />
-                                            </styleClass>
-                                        </Label>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Prof. Gimena Zemeckis" VBox.vgrow="ALWAYS">
-                                            <styleClass>
-                                                <String fx:value="h4" />
-                                                <String fx:value="font-normal" />
-                                            </styleClass>
-                                        </Label>
-                                    </VBox>
-                                </VBox>
-                                <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                        <cursor>
-                                            <Cursor fx:constant="HAND" />
-                                        </cursor>
-                                        <Image url="@../../assets/icons/more_lead.png" />
-                                    </ImageView>
-                                </HBox>
-                            </HBox>
+                            </VBox>
                         </VBox>
-                        <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                            <children>
-                                <VBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                    <children>
-                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Calendario" VBox.vgrow="ALWAYS" />
-                                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                            <children>
-                                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-20" VBox.vgrow="ALWAYS">
-                                                    <children>
-                                                        <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Marzo 2021" HBox.hgrow="ALWAYS">
-                                                            <styleClass>
-                                                                <String fx:value="font-bold" />
-                                                                <String fx:value="calendar-title" />
-                                                            </styleClass>
-                                                        </Label>
-                                                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                                            <children>
-                                                                <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="button-calendar" HBox.hgrow="ALWAYS">
-                                                                    <graphic>
-                                                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                                            <image>
-                                                                                <Image url="@../../assets/icons/arrow_left.png" />
-                                                                            </image>
-                                                                        </ImageView>
-                                                                    </graphic>
-                                                                </Button>
-                                                                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" styleClass="button-calendar">
-                                                                    <graphic>
-                                                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                                            <image>
-                                                                                <Image url="@../../assets/icons/arrow_right.png" />
-                                                                            </image>
-                                                                        </ImageView>
-                                                                    </graphic>
-                                                                </Button>
-                                                            </children>
-                                                        </HBox>
-                                                    </children>
-                                                </HBox>
-                                                <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="padding-all-5" VBox.vgrow="ALWAYS">
-                                                    <children>
-                                                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Lun" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Mar" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Mie" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Jue" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Vie" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Sab" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="Dom" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="1" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="2" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="3" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="4" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="5" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="6" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="7" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="font-normal" />
-                                                                        <String fx:value="h2" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="8" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="9" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="10" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="11" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="12" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="13" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="14" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="15" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="16" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="17" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="18" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="19" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="20" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="21" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                            <styleClass>
-                                                                <String fx:value="space-10" />
-                                                                <String fx:value="calendar-container-bar" />
-                                                            </styleClass>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="22" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="23" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="24" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-current-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="25" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="26" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="27" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="28" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="29" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="30" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="39.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="31" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="71.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="1" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="101.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="2" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="128.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="3" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" layoutX="153.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="4" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="h2" />
-                                                                        <String fx:value="font-normal" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                        <HBox alignment="CENTER" layoutX="15.0" layoutY="144.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" styleClass="space-10" VBox.vgrow="ALWAYS">
-                                                            <children>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" text="." translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="128.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                                <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="153.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="40.0" translateY="-15.0" HBox.hgrow="ALWAYS">
-                                                                    <styleClass>
-                                                                        <String fx:value="calendar-dot" />
-                                                                        <String fx:value="font-bold" />
-                                                                        <String fx:value="calendar-important-day" />
-                                                                    </styleClass>
-                                                                </Label>
-                                                            </children>
-                                                        </HBox>
-                                                    </children>
-                                                </VBox>
-                                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                                    <children>
-                                                        <Label contentDisplay="RIGHT" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Mes" HBox.hgrow="ALWAYS">
-                                                            <graphic>
-                                                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                                                    <image>
-                                                                        <Image url="@../../assets/icons/play.png" />
-                                                                    </image>
-                                                                </ImageView>
-                                                            </graphic>
-                                                            <styleClass>
-                                                                <String fx:value="font-bold" />
-                                                                <String fx:value="h3" />
-                                                                <String fx:value="calendar-important-day" />
-                                                            </styleClass>
-                                                        </Label>
-                                                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                                            <image>
-                                                                <Image url="@../../assets/icons/more_lead.png" />
-                                                            </image>
-                                                        </ImageView>
-                                                    </children>
-                                                </HBox>
-                                            </children>
-                                            <styleClass>
-                                                <String fx:value="calendar-container" />
-                                                <String fx:value="space-10" />
-                                    <String fx:value="card-shadow" />
-                                            </styleClass>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="space-10">
+                            <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                   minWidth="-Infinity" styleClass="font-bold" text="Inbox" VBox.vgrow="ALWAYS"/>
+                            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                <styleClass>
+                                    <String fx:value="mail-container"/>
+                                    <String fx:value="card-shadow"/>
+                                </styleClass>
+                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" styleClass="top-card">
+                                    <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                           minHeight="-Infinity" minWidth="-Infinity" text="Ivicente@universidad.edu.ar"
+                                           HBox.hgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h3"/>
+                                        </styleClass>
+                                    </Label>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
+                                               HBox.hgrow="ALWAYS">
+                                        <Image url="@../../assets/icons/settings.png"/>
+                                    </ImageView>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                      minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                    <styleClass>
+                                        <String fx:value="padding-all-15"/>
+                                        <String fx:value="space-10"/>
+                                    </styleClass>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          HBox.hgrow="ALWAYS">
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                                   preserveRatio="true" VBox.vgrow="ALWAYS">
+                                            <Image url="@../../assets/icons/unchecked_checkbox.png"/>
+                                        </ImageView>
+                                    </VBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                          minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+                                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308"
+                                              maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                              minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true"
+                                                       preserveRatio="true" VBox.vgrow="ALWAYS">
+                                                <Image url="@../../assets/img/woman4.png"/>
+                                            </ImageView>
                                         </VBox>
-                                    </children>
-                                </VBox>
-                                <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="space-10">
-                           <children>
-                              <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Inbox" VBox.vgrow="ALWAYS" />
-                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
-                                 <children>
-                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" styleClass="top-card">
-                                       <children>
-                                          <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Ivicente@universidad.edu.ar" HBox.hgrow="ALWAYS">
-                                             <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h3" />
-                                             </styleClass>
-                                          </Label>
-                                          <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                             <image>
-                                                <Image url="@../../assets/icons/settings.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                              minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5"
+                                              HBox.hgrow="ALWAYS">
+                                            <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                                                   minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold"
+                                                   text="Prof. Romina Gerwig" VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                            </Label>
+                                            <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                                   maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                                   minWidth="-Infinity" styleClass="font-bold"
+                                                   text="Cambio en el programa" VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                            </Label>
+                                            <Label layoutX="10.0" layoutY="37.0" maxHeight="-Infinity"
+                                                   maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                                   minWidth="-Infinity" text="Hola, quería contarlles..."
+                                                   VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                                <styleClass>
+                                                    <String fx:value="font-normal"/>
+                                                    <String fx:value="h1"/>
+                                                </styleClass>
+                                            </Label>
+                                        </VBox>
                                     </HBox>
-                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                       <children>
-                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-                                                   <image>
-                                                      <Image url="@../../assets/icons/unchecked_checkbox.png" />
-                                                   </image>
-                                                </ImageView>
-                                             </children>
-                                          </VBox>
-                                          <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                                   <children>
-                                                      <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-                                                         <image>
-                                                            <Image url="@../../assets/img/woman4.png" />
-                                                         </image>
-                                                      </ImageView>
-                                                   </children>
-                                                </VBox>
-                                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" HBox.hgrow="ALWAYS">
-                                                   <children>
-                                                      <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Prof. Romina Gerwig" VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Cambio en el programa" VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Hola, quería contarlles..." VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                         <styleClass>
-                                                            <String fx:value="font-normal" />
-                                                            <String fx:value="h1" />
-                                                         </styleClass>
-                                                      </Label>
-                                                   </children>
-                                                </VBox>
-                                             </children>
-                                          </HBox>
-                                          <VBox layoutX="110.0" layoutY="10.0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="17:55 hs." VBox.vgrow="ALWAYS">
-                                                   <styleClass>
-                                                      <String fx:value="font-normal" />
-                                                      <String fx:value="h2" />
-                                                   </styleClass>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                       <styleClass>
-                                          <String fx:value="padding-all-15" />
-                                          <String fx:value="space-10" />
-                                       </styleClass>
+                                    <VBox layoutX="110.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+                                          minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                        <Label alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                                               maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                               minWidth="-Infinity" text="17:55 hs." VBox.vgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                    </VBox>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="62.0" maxHeight="-Infinity"
+                                      maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                      VBox.vgrow="ALWAYS">
+                                    <styleClass>
+                                        <String fx:value="padding-all-15"/>
+                                        <String fx:value="space-10"/>
+                                        <String fx:value="mail-container-child"/>
+                                    </styleClass>
+                                    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308"
+                                          maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                          HBox.hgrow="ALWAYS">
+                                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true"
+                                                   preserveRatio="true" VBox.vgrow="ALWAYS">
+                                            <Image url="@../../assets/icons/unchecked_checkbox.png"/>
+                                        </ImageView>
+                                    </VBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                          minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+                                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308"
+                                              maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                              minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                            <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true"
+                                                       preserveRatio="true" VBox.vgrow="ALWAYS">
+                                                <Image url="@../../assets/img/woman3.png"/>
+                                            </ImageView>
+                                        </VBox>
+                                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                              minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5"
+                                              HBox.hgrow="ALWAYS">
+                                            <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                                                   minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold"
+                                                   text="Prof. Paula Almodóvar" VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                            </Label>
+                                            <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity"
+                                                   maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                                   minWidth="-Infinity" styleClass="font-bold" text="Material"
+                                                   VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                            </Label>
+                                            <Label layoutX="10.0" layoutY="37.0" maxHeight="-Infinity"
+                                                   maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                                   minWidth="-Infinity" text="Chicos, les envío los links..."
+                                                   VBox.vgrow="ALWAYS">
+                                                <VBox.margin>
+                                                    <Insets/>
+                                                </VBox.margin>
+                                                <styleClass>
+                                                    <String fx:value="font-normal"/>
+                                                    <String fx:value="h1"/>
+                                                </styleClass>
+                                            </Label>
+                                        </VBox>
                                     </HBox>
-                                    <HBox layoutX="10.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
-                                       <children>
-                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-                                                   <image>
-                                                      <Image url="@../../assets/icons/unchecked_checkbox.png" />
-                                                   </image>
-                                                </ImageView>
-                                             </children>
-                                          </VBox>
-                                          <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                                   <children>
-                                                      <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
-                                                         <image>
-                                                            <Image url="@../../assets/img/woman3.png" />
-                                                         </image>
-                                                      </ImageView>
-                                                   </children>
-                                                </VBox>
-                                                <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" HBox.hgrow="ALWAYS">
-                                                   <children>
-                                                      <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Prof. Paula Almodóvar" VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="font-bold" text="Material" VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                      </Label>
-                                                      <Label layoutX="10.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Chicos, les envío los links..." VBox.vgrow="ALWAYS">
-                                                         <VBox.margin>
-                                                            <Insets />
-                                                         </VBox.margin>
-                                                         <styleClass>
-                                                            <String fx:value="font-normal" />
-                                                            <String fx:value="h1" />
-                                                         </styleClass>
-                                                      </Label>
-                                                   </children>
-                                                </VBox>
-                                             </children>
-                                          </HBox>
-                                          <VBox layoutX="110.0" layoutY="10.0" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="17:55 hs." VBox.vgrow="ALWAYS">
-                                                   <styleClass>
-                                                      <String fx:value="font-normal" />
-                                                      <String fx:value="h2" />
-                                                   </styleClass>
-                                                </Label>
-                                             </children>
-                                          </VBox>
-                                       </children>
-                                       <styleClass>
-                                          <String fx:value="padding-all-15" />
-                                          <String fx:value="space-10" />
-                                          <String fx:value="mail-container-child" />
-                                       </styleClass>
-                                    </HBox>
-                                    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="padding-all-10" VBox.vgrow="ALWAYS">
-                                       <children>
-                                          <Button graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Escribir de nuevo" HBox.hgrow="ALWAYS">
-                                             <styleClass>
-                                                <String fx:value="button-meeting" />
-                                                <String fx:value="button-calendar" />
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="h2" />
-                                                <String fx:value="button-mail" />
-                                             </styleClass>
-                                             <graphic>
-                                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../assets/icons/plus.png" />
-                                                   </image>
-                                                </ImageView>
-                                             </graphic>
-                                          </Button>
-                                          <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Ver todo" HBox.hgrow="ALWAYS">
-                                             <styleClass>
-                                                <String fx:value="font-bold" />
-                                                <String fx:value="calendar-important-day" />
-                                                <String fx:value="h2" />
-                                             </styleClass>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <styleClass>
-                                    <String fx:value="mail-container" />
-                                    <String fx:value="card-shadow" />
-                                 </styleClass>
-                              </VBox>
-                           </children></VBox>
-                            </children>
+                                    <VBox layoutX="110.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+                                          minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+                                        <Label alignment="CENTER_RIGHT" maxHeight="-Infinity"
+                                               maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                               minWidth="-Infinity" text="17:55 hs." VBox.vgrow="ALWAYS">
+                                            <styleClass>
+                                                <String fx:value="font-normal"/>
+                                                <String fx:value="h2"/>
+                                            </styleClass>
+                                        </Label>
+                                    </VBox>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                                      minWidth="-Infinity" styleClass="padding-all-10" VBox.vgrow="ALWAYS">
+                                    <Button graphicTextGap="10.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                                            minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                            text="Escribir de nuevo" HBox.hgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="button-meeting"/>
+                                            <String fx:value="button-calendar"/>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="h2"/>
+                                            <String fx:value="button-mail"/>
+                                        </styleClass>
+                                        <graphic>
+                                            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true"
+                                                       preserveRatio="true">
+                                                <Image url="@../../assets/icons/plus.png"/>
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308"
+                                           maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                           text="Ver todo" HBox.hgrow="ALWAYS">
+                                        <styleClass>
+                                            <String fx:value="font-bold"/>
+                                            <String fx:value="calendar-important-day"/>
+                                            <String fx:value="h2"/>
+                                        </styleClass>
+                                    </Label>
+                                </HBox>
+                            </VBox>
                         </VBox>
-                    </children>
+                    </VBox>
                 </HBox>
             </center>
         </BorderPane>
