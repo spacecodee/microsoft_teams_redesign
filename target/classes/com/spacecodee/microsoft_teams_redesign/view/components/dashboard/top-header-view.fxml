@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+      minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.spacecodee.microsoft_teams_redesign.controller.components.dashboard.TopHeaderController">
+    <stylesheets>
+        <URL value="@../../../assets/css/fonts.css"/>
+        <URL value="@../../../assets/css/styles.css"/>
+    </stylesheets>
+    <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+          styleClass="space-10" HBox.hgrow="ALWAYS">
+        <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+              HBox.hgrow="ALWAYS">
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="rotate-180"
+                       HBox.hgrow="ALWAYS">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+                <Image url="@../../../assets/icons/arrow_left_withe.png"/>
+            </ImageView>
+        </HBox>
+        <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+              styleClass="text-search-container" HBox.hgrow="ALWAYS">
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0"
+                       HBox.hgrow="ALWAYS">
+                <Image url="@../../../assets/icons/search.png"/>
+            </ImageView>
+            <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                       minWidth="-Infinity" promptText="Buscar" styleClass="font-normal" HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </HBox>
+    <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+          minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+        <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              HBox.hgrow="ALWAYS">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
+                <Image url="@../../../assets/icons/chat.png"/>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0" y="5.0">
+                <Image url="@../../../assets/icons/dot_rose.png"/>
+            </ImageView>
+        </Pane>
+        <Pane layoutX="161.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
+                <Image url="@../../../assets/icons/notifications.png"/>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0" y="5.0">
+                <Image url="@../../../assets/icons/dot_rose.png"/>
+            </ImageView>
+        </Pane>
+        <Pane layoutX="182.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" styleClass="user-profile-container" HBox.hgrow="ALWAYS">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                <Image url="@../../../assets/img/user_profile.png"/>
+            </ImageView>
+            <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="28.0" y="28.0">
+                <Image url="@../../../assets/icons/dot_green.png"/>
+            </ImageView>
+        </Pane>
+    </HBox>
+</HBox>

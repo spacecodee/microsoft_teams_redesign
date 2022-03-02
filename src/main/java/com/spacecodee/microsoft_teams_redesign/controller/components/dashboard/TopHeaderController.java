@@ -5,7 +5,7 @@ import javafx.fxml.Initializable;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SideBarView implements Initializable {
+public class TopHeaderController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

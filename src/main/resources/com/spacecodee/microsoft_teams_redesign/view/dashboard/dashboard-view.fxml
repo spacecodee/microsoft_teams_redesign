@@ -6,91 +6,16 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
 <BorderPane fx:id="appContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
             minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.spacecodee.microsoft_teams_redesign.controller.dashboard.DashboardController">
-    <top>
-        <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
-              minWidth="-Infinity" BorderPane.alignment="CENTER">
-            <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-                  styleClass="space-10" HBox.hgrow="ALWAYS">
-                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-                      HBox.hgrow="ALWAYS">
-                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true"
-                               styleClass="rotate-180" HBox.hgrow="ALWAYS">
-                        <cursor>
-                            <Cursor fx:constant="HAND"/>
-                        </cursor>
-                        <Image url="@../../assets/icons/arrow_left_withe.png"/>
-                    </ImageView>
-                </HBox>
-                <HBox maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
-                      styleClass="text-search-container" HBox.hgrow="ALWAYS">
-                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleZ="0.0"
-                               HBox.hgrow="ALWAYS">
-                        <Image url="@../../assets/icons/search.png"/>
-                    </ImageView>
-                    <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                               minHeight="-Infinity" minWidth="-Infinity" promptText="Buscar" styleClass="font-normal"
-                               HBox.hgrow="ALWAYS"/>
-                </HBox>
-            </HBox>
-            <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
-                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10"
-                  HBox.hgrow="ALWAYS">
-                <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                      HBox.hgrow="ALWAYS">
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
-                        <Image url="@../../assets/icons/chat.png"/>
-                    </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0"
-                               y="5.0">
-                        <Image url="@../../assets/icons/dot_rose.png"/>
-                    </ImageView>
-                </Pane>
-                <Pane layoutX="161.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
-                      minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" y="5.0">
-                        <Image url="@../../assets/icons/notifications.png"/>
-                    </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="20.0"
-                               y="5.0">
-                        <Image url="@../../assets/icons/dot_rose.png"/>
-                    </ImageView>
-                </Pane>
-                <Pane layoutX="182.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity"
-                      minHeight="-Infinity" minWidth="-Infinity" styleClass="user-profile-container"
-                      HBox.hgrow="ALWAYS">
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" x="5.0"
-                               y="5.0">
-                        <Image url="@../../assets/img/user_profile.png"/>
-                    </ImageView>
-                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true" x="28.0"
-                               y="28.0">
-                        <Image url="@../../assets/icons/dot_green.png"/>
-                    </ImageView>
-                </Pane>
-            </HBox>
-        </HBox>
-    </top>
     <styleClass>
         <String fx:value="padding-all-10"/>
         <String fx:value="container"/>
@@ -99,112 +24,29 @@
         <URL value="@../../assets/css/styles.css"/>
         <URL value="@../../assets/css/fonts.css"/>
     </stylesheets>
-    <left>
+    <right>
         <VBox maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               BorderPane.alignment="CENTER">
             <styleClass>
-                <String fx:value="side-bar-container"/>
-                <String fx:value="space-30"/>
+                <String fx:value="card-meeting"/>
+                <String fx:value="card-shadow"/>
+                <String fx:value="space-10"/>
             </styleClass>
-            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                  minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" VBox.vgrow="ALWAYS">
-                <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-                        mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/dashboard.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/people.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/calendar.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/mail.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/note.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/more.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-            </VBox>
-            <VBox alignment="BOTTOM_CENTER" layoutX="20.0" layoutY="20.0" maxHeight="1.7976931348623157E308"
-                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10"
-                  VBox.vgrow="ALWAYS">
-                <Button layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/todo_list.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-                <Button layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                        minWidth="-Infinity" mnemonicParsing="false" styleClass="side-bar-button" VBox.vgrow="ALWAYS">
-                    <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../assets/icons/help.png"/>
-                        </ImageView>
-                    </graphic>
-                    <cursor>
-                        <Cursor fx:constant="HAND"/>
-                    </cursor>
-                </Button>
-            </VBox>
+            <Label text="Actividad" VBox.vgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="font-bold"/>
+                    <String fx:value="h1"/>
+                </styleClass>
+            </Label>
+            <Label layoutX="30.0" layoutY="30.0" text="Notificaciones">
+                <styleClass>
+                    <String fx:value="font-bold"/>
+                    <String fx:value="h1"/>
+                </styleClass>
+            </Label>
+            <VBox fx:id="notificationContainer" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
+                  minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS"/>
         </VBox>
-    </left>
-    <right>
-        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER"/>
     </right>
     <center>
         <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"

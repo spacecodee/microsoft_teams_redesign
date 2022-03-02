@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spacecodee.microsoft_teams_redesign.controller.components.dashboard.CardNotificationsView">
+    <styleClass>
+        <String fx:value="card-meeting" />
+        <String fx:value="space-20" />
+        <String fx:value="card-shadow-notification" />
+    </styleClass>
+    <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-10" HBox.hgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" VBox.vgrow="ALWAYS">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                <Image url="@../../../assets/img/woman1.png" />
+            </ImageView>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity">
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                <Image url="@../../../assets/icons/message_sent.png" />
+            </ImageView>
+        </HBox>
+    </VBox>
+    <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" HBox.hgrow="ALWAYS">
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" VBox.vgrow="ALWAYS">
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Syamalan" HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="font-bold" />
+                    <String fx:value="h2" />
+                    <String fx:value="calendar-current-day" />
+                </styleClass>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Te mencionó" HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="font-bold" />
+                    <String fx:value="h2" />
+                </styleClass>
+            </Label>
+        </HBox>
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" VBox.vgrow="ALWAYS">
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="En" HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="h3" />
+                    <String fx:value="font-normal" />
+                </styleClass>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="Dirección de arte" HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="h3" />
+                    <String fx:value="font-bold" />
+                </styleClass>
+            </Label>
+        </HBox>
+        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="space-5" VBox.vgrow="ALWAYS">
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Los grupos de" HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="h3" />
+                    <String fx:value="font-normal" />
+                </styleClass>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" text="\@Vicente Y..." HBox.hgrow="ALWAYS">
+                <styleClass>
+                    <String fx:value="h3" />
+                    <String fx:value="font-bold" />
+                    <String fx:value="calendar-current-day" />
+                </styleClass>
+            </Label>
+        </HBox>
+    </VBox>
+    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" HBox.hgrow="ALWAYS">
+        <HBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+            <Label styleClass="date-title" text="19/04" HBox.hgrow="ALWAYS" />
+        </HBox>
+        <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+                <Image url="@../../../assets/icons/more_lead.png" />
+            </ImageView>
+        </HBox>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@../../../assets/css/fonts.css" />
+        <URL value="@../../../assets/css/styles.css" />
+    </stylesheets>
+</HBox>
